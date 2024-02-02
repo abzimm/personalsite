@@ -87,7 +87,14 @@
 
     </main>
 
-    <footer>
+    <footer style="    background-color: #C0745E;
+    height: 100%;
+    width: 100%;
+    border-top: 2px solid black;
+    margin: 0;
+    padding: 1;
+    display: flex;
+    justify-content: space-between;">
 
         <h3> abzimm02@gmail.com </h3>
 
@@ -105,14 +112,10 @@
         var greeting;
 
         if (currentHour >= 5 && currentHour < 12) {
-            greeting = "morning";
-        } else if (currentHour >= 12 && currentHour < 18) {
-            greeting = "afternoon";
-        } else {
+            greeting = " morning";
+        } else if (currentHour >= 12 && currentHour < 18) { greeting = "afternoon"; } else {
             greeting = "evening";
-        }
-
-        // Use innerHTML to allow customization within the <span>
+        } // Use innerHTML to allow customization within the <span>
         document.querySelector("span").innerHTML = greeting;
 
 
