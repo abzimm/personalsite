@@ -263,11 +263,11 @@ footer {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
 footer h3 {
-    padding: 0.2em;
+    padding: 0.2em 1em;
     font-size: 1em;
 }
 
