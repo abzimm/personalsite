@@ -254,18 +254,6 @@ main {
 
 
 
-
-footer {
-    background-color: #C0745E;
-    height: 100%;
-    width: 100%;
-    border-top: 2px solid black;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-}
-
 footer h3 {
     padding: 0.2em 1em;
     font-size: 1em;
