@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/casestudy.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <title>UX Case Study</title>
+    <style>
+
+    </style>
+</head>
+
+<body style="font-family: 'Manrope', sans-serif;">
+
+
+
+
+    <header style="display: flex; align-items: center;">
+        <div>
+            <h1>Kiosk: Metamodern Media</h1>
+            <h3>An interactive kiosk that makes academic research fun and engaging.</h3>
+            <div class="button">
+                <a href="https://abzimm.github.io/metamodern_media/index.html" target="_blank"> Live Site </a>
+            </div>
+        </div>
+        <figure>
+            <img src="assets\metamodern\Screenshot_20240201_143048_Gallery.jpg"
+                style="max-width: 100%; border-radius: 0; margin-left: 30px;">
+        </figure>
+
+    </header>
+
+    <section class="overview">
+        <div class="overview-card">
+            <h2>Tools</h2>
+            <p>Figma, HTML/CSS, JavaScript, Chrome Kiosk App</p>
+        </div>
+        <div class="overview-card">
+            <h2>Purpose</h2>
+            <p>Metamodernism describes a new cultural philosophy for the digital age. My class assignment was to break
+                down this abstract theory into an interactive experience. </p>
+        </div>
+        <div class="overview-card">
+            <h2>Design Goals</h2>
+            <p> Visual clarity and ease of usability were essential, since the kiosk should be able to be interacted
+                with and understood
+                by anyone. </p>
+        </div>
+        <div class="overview-card">
+            <h2>Time</h2>
+            <p>2 weeks </p>
+        </div>
+    </section>
+
+    <div class="border"> </div>
+
+    <h1> Process </h1>
+    <section class="process">
+
+
+        <h2>Context </h2>
+        <p> <span> Metamodernism </span> is a theory that attempts to describe how the digital age thinks and feels
+            about culture. Prior to development, I conducted academic research for a month to better understand the
+            different facets of this idea. Ultimately, I decided that showcasing different media artifacts would be the
+            most accessible way to convey information. </p>
+
+        <h2>Wireframing</h2>
+
+        <p> In order to create an engaging user experience, my first challenge was to create an intuitive display.
+            Kiosks I looked to for inspiration were all <span> highly visual, showed
+                only
+                what was necessary, and prioritized a simple flow </span>. My initial
+            wireframing aimed to use visual navigation as much as possible, and used modals to reduce
+            information overload.
+        </p>
+
+        <figure>
+            <img src="assets\metamodern\Screenshot (163).png">
+            <figcaption>I wanted to make a super simple roadmap.</figcaption>
+        </figure>
+        <div class="figure-gap"></div>
+
+        <p> To grab the user's attention, I included a "select" screen at the start, so that they could
+            immediately go toward what seemed
+            most interesting. </p>
+
+        <figure>
+            <img src="assets\metamodern\metamodern-select.png">
+        </figure>
+
+
+        <p>
+            The main content would be the media section, so I fleshed out its
+            interface
+            further. My initial planning broke it down into categories and their examples. Since metamodernism is
+            such a vast concept, <span> this was my strategy to make it more digestable, allowing people to instantly
+                connect
+                with media they might've seen before. </span> </p>
+
+        <figure>
+            <img src="assets\metamodern\media_lp.svg">
+            <figcaption>Broad categories for cultural media.</figcaption>
+        </figure>
+        <div class="figure-gap"></div>
+
+
+        <p>
+            At this point in ideation, however, it became apparent that I had no concept of
+            the media's
+            interactive modals beyond a static description. This was something I'd have to iterate
+            after
+            getting
+            feedback. </p>
+
+
+
+        <figure>
+            <img src="assets\metamodern\metamodern examples.svg">
+            <figcaption> It wasn't super helpful. </figcaption>
+        </figure>
+
+
+
+
+        <h2> Visual Style</h2>
+
+
+        <p>For the project's mood and readibility, I wanted to utilize graphic
+            colors and eye-catching designs that were easy to understand. The intent was to communicate the unique
+            subject matter without being too overwhelming. </p>
+
+        <figure>
+            <img src="assets\metamodern\Group 16.svg"
+                style="max-width: 400px;box-shadow: none; border-radius: none; border: none;">
+        </figure>
+
+        <p> Since metamodernism
+            combines old philosophies with newer ways of thinking, I liked the idea of
+            contrasting black-and-white photos with colorful shapes. I created the assets in Figma and drew
+            inspiration from the Frutiger Metro aesthetic.</p>
+
+        <figure style="   display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;">
+            <img src="assets\metamodern\tv.svg"
+                style="max-width: 200px; box-shadow: none; border-radius: none; border: none;">
+            <img src="assets\metamodern\art (1).svg"
+                style="max-width: 200px; box-shadow: none; border-radius: none; border: none;">
+        </figure>
+
+        <p> At this point I was one week into the project, and translated my wireframing into a slide presentation
+            for feedback. </p>
+
+
+        <h2>Feedback + Iteration</h2>
+        <p>
+            The initial concepts were workshopped by peers and faculty. Though the experience was
+            easy to follow, <span> it didn't do enough to marry function with meaning </span>. I reworked my
+            modal windows to
+            have
+            unique interactive features that made sense for its media type.
+        </p>
+
+        <figure>
+            <img src="assets\metamodern\modal1.png">
+            <figcaption> Draggable slider that emulates playing a video. </figcaption>
+        </figure>
+        <div class="figure-gap"></div>
+
+        <figure>
+            <img src="assets\metamodern\modal2.png">
+            <figcaption> Stackable flashcards containing quotes from the book. </figcaption>
+        </figure>
+        <div class="figure-gap"></div>
+
+        <p style="padding-top: 20px;">
+            I continued to fiddle with the media selection screen, because while some people tapped through it, others
+            didn't realize they could interact with the icons. Since the touch interface of a Kiosk doesn't have hover
+            animations
+            to
+            show clickable items, I added labels to have more explicit instruction, and this seemed to
+            fix the issue.
+        </p>
+
+        <figure>
+            <img src="assets\metamodern\hero_mm.png">
+        </figure>
+
+        <p> At this point I was comfortable with my designs, and began development for the live kiosk. </p>
+
+
+
+        <div class="border"> </div>
+
+
+        <h1>Implementation</h1>
+
+
+        <p> Our professor gave us a starter kit for the code, but I wrote everything from scratch.
+            I placed my custom assets into my HTML/CSS layout, while
+            more
+            complex
+            interactivity used JavaScript.
+            <br> <br> A major constraint for this project was
+            testing
+            the
+            dimensions
+            constantly, in order to ensure it mapped to the kisok display correctly. We were given a
+            testing tool to account for this, but there were still resolution issues with the end result.
+            <br> <br> <span> The end site was displayed using the Chrome Kiosk App. </span> My project was selected
+            to be
+            shown as the
+            first kiosk in a week-long showcase, and
+            each person coming across it expressed delight at the interactions and seeing what they could tap
+            on. An article is currently being written about it!
+            <br> <br> Overall, I'm satisfied with how everything turned out, and I was able to accomplish packaging
+            dense
+            content into a simple, engaging interface.
+        </p>
+
+
+        <figure>
+            <img src="assets\metamodern\20240117_192349.jpg" style="max-width: 300px;">
+            <figcaption> Public kiosk display. </figcaption>
+        </figure>
+        <div class="figure-gap"></div>
+
+
+
+    </section>
+
+
+    <div class="border"> </div>
+
+    <section class="conclusion">
+        <h1>Takeaways</h1>
+
+        <ul>
+            <li>
+                <p> <span>While users enjoyed exploring different features, there was less incentive to read through the
+                        text. To
+                        encourage learning it would have been useful to have something like a quiz.
+                    </span> </p>
+            </li>
+            <li>
+                <p> <span> Designing for touch interfaces demands clear visual indicators and explicit instructions.
+                    </span> </p>
+            </li>
+            <li>
+                <p> <span>If I revisited <i> Metamodern Media </i>, I would
+                        redo the code to be cleaner, make everything responsive, add more items of interest, and perform
+                        more extensive user testing. </span>
+                </p>
+            </li>
+
+        </ul>
+
+    </section>
+
+    <section class="links">
+        <a href="index.html"> Home </a>
+        <a href="openlab.html"> Open Lab -> </a>
+    </section>
+
+
+</body>
+
+</html>

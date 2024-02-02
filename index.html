@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abby Zimmerman </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body style="background-color: #ececec;  color: #03072E;     font-family: 'Manrope', sans-serif;;">
+    <!-- <svg xmlns="http://www.w3.org/2000/svg"
+        style="position: absolute; top: 0; left: 0; z-index: -1; width: 100%; height: auto;">
+        <circle cx="-10%" cy="100%" r="40%" fill="#FF0000" />
+    </svg> -->
+    <!-- header: picture and introduction -->
+    <header>
+        <div class="header">
+            <div>
+                <!-- <img src="assets\sun.svg" id="sun"> -->
+                <img src="assets\icon.svg" class="icon">
+            </div>
+            <div>
+                <h1 style="  font-family: 'Fauna One', serif;"> Good
+                    <span style="color: #7AC7B4;"> </span>.
+                </h1>
+                </h1>
+                <h2> I'm an interactive design student specializing in UX and web development. </h2>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- main: projects and about  -->
+        <div class="tabnav" id="tabNav">
+            <button class="tab-btn" onclick="openTab('projects', this)">projects</button>
+            <button class="tab-btn" onclick="openTab('about', this)">about</button>
+        </div>
+
+        <div class="tabcontent" id="projects-tab">
+
+
+            <div class="projects-container">
+                <div class="projects-card">
+                    <h3> Kiosk: Metamodern Media </h3>
+                    <h2> Designer | Developer</h2>
+                    <img src='assets\metamodern\hero_mm.png'>
+                    <div class="project-links">
+                        <a class="button1" href="metamodernstudy.html"> Case Study -> </a>
+                        <a class="button2" href="https://abzimm.github.io/metamodern_media/index.html" target="_blank">
+                            Live Site ->
+                        </a>
+                    </div>
+                </div>
+
+                <div class="projects-card">
+                    <h3> Site Redesign: Open Lab </h3>
+                    <h2> Designer</h2>
+                    <img src='assets\openlab\openlab_wireframe.png'>
+
+                    <div class="project-links">
+                        <a class="button1" href="openlab.html"> Case Study -> </a>
+                        <a class="button2"> In development!
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="tabcontent" id="about-tab">
+
+            <div class="about-container">
+                <h2>Nice to meet you! </h2>
+                <p> I'm Abby, a Digital Narrative & Interactive Design student at the University of
+                    Pittsburgh, with minors in Information Science and Korean. <br><br> I love all things UX/UI, and I
+                    constantly push myself to learn new technology so that I can build out my dream designs. Right now
+                    I'm learning React, and next on my list is Three.js and Raspberry Pi. On campus, I work at a
+                    makerspace lab--most of my time between classes is spent trying to keep our 3D printers alive.
+                    <br><br> Other things I enjoy are digital art, playing games, philosophy,
+                    post-punk music, and bothering my cat.
+                </p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div>
+            <h3> site created by me &#x1F389; </h3>
+        </div>
+    </footer>
+
+
+
+    <script>
+
+
+        var currentDate = new Date();
+        var currentHour = currentDate.getHours();
+        var greeting;
+
+        if (currentHour >= 5 && currentHour < 12) {
+            greeting = "morning";
+        } else if (currentHour >= 12 && currentHour < 18) {
+            greeting = "afternoon";
+        } else {
+            greeting = "evening";
+        }
+
+        // Use innerHTML to allow customization within the <span>
+        document.querySelector("span").innerHTML = greeting;
+
+
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            openTab('projects', document.querySelector('.tab-btn'));
+        });
+
+        function openTab(tabName, button) {
+            // Hide all tab contents
+            var tabContents = document.querySelectorAll('.tabcontent');
+            tabContents.forEach(function (tabContent) {
+                tabContent.style.display = 'none';
+            });
+
+            // Remove active class from all buttons
+            var tabButtons = document.querySelectorAll('.tab-btn');
+            tabButtons.forEach(function (tabButton) {
+                tabButton.classList.remove('active');
+            });
+
+            // Show the selected tab content
+            document.getElementById(tabName + '-tab').style.display = 'block';
+
+            // Add active class to the clicked button
+            button.classList.add('active');
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>

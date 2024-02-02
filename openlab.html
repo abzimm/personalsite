@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/casestudy.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <title>UX Case Study</title>
+    <style>
+
+    </style>
+</head>
+
+<body style="font-family: 'Manrope', sans-serif;">
+
+
+
+
+    <header style="display: flex; align-items: center;">
+        <div>
+            <h1>Site Redesign: Open Lab</h1>
+            <h3>Revamping the website for University of Pittsburgh's 3D makerspace.</h3>
+        </div>
+        <figure>
+            <img src="assets\openlab\openlab.svg" style="max-width: 100%; border-radius: 0; margin-left: 30px;">
+        </figure>
+
+    </header>
+
+    <section class="overview">
+        <div class="overview-card">
+            <h2>Tools</h2>
+            <p>Figma, Airtable </p>
+        </div>
+        <div class="overview-card">
+            <h2>Role</h2>
+            <p> UX/UI Designer </p>
+        </div>
+        <div class="overview-card">
+            <h2>Problem</h2>
+            <p> In order to find out about Open Lab online, new potential
+                members
+                were originally being redirected to a site that was confusing to use. I was tasked with creating a
+                design that would resolve its issues. </p>
+        </div>
+        <div class="overview-card">
+            <h2>Time</h2>
+            <p>5 days</p>
+        </div>
+    </section>
+
+    <div class="border"> </div>
+
+    <h1> Process </h1>
+    <section class="process">
+
+
+        <h2>Identifying Problems</h2>
+
+        <p> When the original website for Open Lab was created, its final result was delivered without consulting any of
+            the staff on the design. As a result, all of the content requirements were there, but the user experience
+            felt awkward to use. Several faculty and student members came in to ask questions at the physical location
+            after being unable to navigate the site. Within the last year, Open Lab has recieved over 3,500 new
+            members, and having a streamlined digital presence will further bolster its accessibility. </p>
+
+        <p> To determine what the current pain points were, I spoke to staff and students to
+            determine how they felt about the current layout.
+            <br><br>
+            <span> The most apparent issue was a confusing user flow, </span> as Open Lab offers separate
+            services to
+            faculty and students. The original landing page had buttons that immediately led the user
+            away from the site, with one opening Outlook and the other opening a survey.
+        </p>
+
+
+
+        <figure>
+            <img src="assets\openlab\p1 (1).png">
+            <figcaption> Both buttons have entirely different purposes. </figcaption>
+        </figure>
+        <div class="figure-gap"></div>
+
+        <figure>
+            <img src="assets\openlab\p2.png">
+            <figcaption> The survey is deceptive, since most choices lead to the Canvas page. </figcaption>
+        </figure>
+        <div class="figure-gap"></div>
+
+
+
+
+        <p> Another key issue was the amount of redundant content. Multiple pages and
+            menus described all the
+            different equipment of the lab, but the <span> user was already being referred to a Canvas page with
+                the same information. </span> In order to make the site as clean as possible, I would have to
+            provide a very clear general purpose.
+        </p>
+
+
+        <figure>
+            <img src="assets\openlab\p3.png">
+            <figcaption> All of this information is found on the Lab's Canvas. </figcaption>
+        </figure>
+        <div class="figure-gap"></div>
+
+
+        <figure>
+            <img src="assets\Screenshot (162).png">
+            <figcaption> Most of this content was outdated or found on the Instagram. We decided to scrap it.
+            </figcaption>
+        </figure>
+        <div class="figure-gap"></div>
+
+        <p> In conclusion, the original website wasn't intuitive to use, and it could be simplified to a considerable
+            degree. </p>
+
+
+        <section>
+
+
+            <h2>Designing for User Needs</h2>
+            <p>
+                The manager wanted me to reduce everything as much as possible, so we decided on using a single page
+                format. I outlined the site's
+                most essential
+                needs:
+            <ul>
+                <li>
+                    <p> Inform students about how to become a member </p>
+                </li>
+                <li>
+                    <p> Offer consultation to faculty </p>
+                </li>
+                <li>
+                    <p> Indicate that these were distinct goals </p>
+                </li>
+            </ul>
+            </p>
+
+            <figure>
+                <img src="assets\openlab\img20240130_002.png" style="max-width: 600px;">
+                <figcaption> Rough sketch created during discussions. </figcaption>
+            </figure>
+            <div class="figure-gap"></div>
+
+            <p> Since the main goal was to <span> delineate the two main user pathways, </span> I replaced the buttons
+                with anchors
+                that offered more description. </p>
+
+            <figure>
+                <img src="assets\openlab\userfllwos.png">
+            </figure>
+
+            <p> The next problem was figuring out how to remove all the content bloat. The lab's manager suggested using
+                only visual icons to display what equipment and services were available. That way, users could see
+                everything at a glance, and it reinforced going to the Canvas page to get more instructive training. The
+                final product would use vector badge icons, which were already available on the internal Airtable for
+                tracking member progress. </p>
+
+            <figure>
+                <img src="assets\openlab\img20240130_003.png">
+                <figcaption> This design allows for newer services to be added more easily. </figcaption>
+            </figure>
+            <div class="figure-gap"></div>
+
+            <p> With the two main issues reworked, it was time to start translating my initial ideas into the
+                wireframes. </p>
+        </section>
+
+
+        <h2> Site Components </h2>
+        <p>
+            As the turnaround was only a few days, I decided on creating <span> modular design
+                components </span> that the developers could implement as they saw best. By doing this, I could quickly
+            and easily provide potential layouts and all of the key content within them.
+            <br><br> Working off of the original site's code and styling, I assembled different elements that
+            could
+            be
+            placed anywhere.
+        </p>
+
+
+        <figure>
+            <img src="assets\openlab\components (1).svg">
+            <figcaption> Elements based off of the original CSS. </figcaption>
+
+        </figure>
+        <div class="figure-gap"></div>
+
+
+
+        <p> With this approach, it was also intuitive to mock up different variations of the sections.
+        </p>
+
+        <figure>
+            <img src="assets\openlab\mission (1).svg">
+        </figure>
+        <figure>
+            <img src="assets\openlab\about.png">
+        </figure>
+        <div class="figure-gap"></div>
+
+        <p> Each anchor would lead to more information, which would then redirect students and faculty to their
+            respective links. This was a more linear experience. Additionally, to still showcase the lab's projects, I
+            included a banner with the Instagram. </p>
+        <figure>
+            <img src="assets\openlab\Group 5.png">
+        </figure>
+
+        <p> Once I had my building blocks in place, I started creating the high fidelity wireframes. First, I
+            constructed a "main" version of the site, demonstrating one potential flow for all of the content. I then
+            added two variations of this layout, providing small changes that didn't impact the overall content, but
+            could offer more stylistic options to the developer. </span>
+        </p>
+
+        <figure>
+            <img src="assets\openlab\Screenshot (160).png">
+            <figcaption> The end result! </figcaption>
+        </figure>
+        <div class="figure-gap"></div>
+
+        <p> The design files were approved by the entire staff and sent off for development. </p>
+
+
+
+        <h2>Follow Up</h2>
+
+        <p> As of now, the revamped website is currently in development.
+            <br><br> Following this project, <span> I was approached to redesign another University website </span> that
+            showcases
+            every makerspace on campus. It deals with similar needs and requirements, and I've been
+            using
+            the same methodology to improve user experience.
+        </p>
+
+        <figure>
+            <img src="assets\openlab\makers.png">
+            <figcaption> Initial drafting for the campus-wide makerspace website. </figcaption>
+        </figure>
+        <div class="figure-gap"></div>
+
+
+        </div>
+        </div>
+
+
+    </section>
+
+
+
+    <div class="border"> </div>
+
+    <section class="conclusion">
+        <h1>Takeaways</h1>
+
+        <ul>
+            <li>
+                <p> <span> Not communicating past initital requirements leads to a disconnect with the user experience.
+                    </span> </p>
+            </li>
+            <li>
+                <p> <span>More is not always better, and information should flow intuitively. </span> </p>
+            </li>
+            <li>
+                <p> <span> Creating smaller design components allows for much greater flexibility and iterative design.
+                    </span>
+                </p>
+            </li>
+
+        </ul>
+
+    </section>
+
+    <section class="links">
+        <a href="index.html"> Home </a>
+        <a href="metamodernstudy.html"> Metamodern Media -> </a>
+    </section>
+
+
+</body>
+
+</html>

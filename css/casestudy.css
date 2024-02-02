@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Fauna+One&family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+
+/* main body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ececec;
+    font-family: 'Manrope', sans-serif;
+    color: #03072E;
+    margin: 50px 220px;
+    line-height: 1.6;
+}
+
+
+@media screen and (max-width:1100px) {
+    body {
+        margin: 70px 50px;
+    }
+}
+
+@media screen and (max-width:750px) {
+    body {
+        margin: 70px 15px;
+    }
+}
+
+
+/* flex settings */
+.flex {
+    display: flex;
+}
+
+@media screen and (max-width:900px) {
+    .flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* elements */
+h1 {
+    margin-bottom: 40px;
+    font-size: 2.4em;
+    font-family: 'Fauna One', serif;
+}
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #7AC7B4;
+    font-family: 'Fauna One', serif;
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+
+    font-weight: 550;
+    font-size: 1.1em;
+}
+
+span {
+    background-color: rgba(56, 127, 109, 0.3);
+    padding: 1px 2px;
+    margin: 0 2px;
+    font-weight: 600;
+    font-family: 'Manrope', sans-serif;
+}
+
+img {
+    border-radius: 500px 10px 400px 10px/10px 400px 10px 500px;
+    border: 1px solid #03072E;
+    ;
+    border-bottom: 2px solid #03072E;
+    ;
+    /* Adjust the value to control the roundness of corners */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    /* Adjust the values for the shadow effect */
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+figcaption {
+    position: absolute;
+    font-size: 0.9em;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 8px;
+    text-align: center;
+    width: 100%;
+}
+
+figure {
+    margin: 50px 0;
+}
+
+figure .flex {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+@media screen and (max-width:900px) {
+    figure .flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+}
+
+
+.figure-gap {
+    height: 3px;
+    /* Add margin below the figure */
+}
+
+
+.button {
+    margin: 50px 0;
+
+}
+
+.button a {
+    font-weight: bold;
+    margin: 0;
+    border: 2px solid;
+    border-bottom: 3.5px solid;
+    border-radius: 20px;
+    padding: 1.2em;
+    text-align: center;
+    color: #03072E;
+    background-color: #C0745E;
+}
+
+
+.button a:hover {
+    cursor: pointer;
+    color: inherit;
+    transform: scale(2);
+    color: #03072E;
+}
+
+
+.border {
+    border: 1px solid black;
+    margin: 50px 0;
+}
+
+
+
+.gap {
+    height: 100px;
+}
+
+/* sections */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header figure {
+
+        margin-top: 10px;
+        /* Adjust as needed for spacing */
+    }
+
+    header img {
+        margin-left: 0 !important;
+    }
+}
+
+.overview {
+    display: flex;
+}
+
+.overview-card {
+    padding-right: 50px;
+}
+
+
+@media screen and (max-width:900px) {
+    .overview {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .overview-card {
+        padding-right: 0;
+    }
+}
+
+
+
+
+.process {
+    margin: 0 70px;
+}
+
+.process h1 {
+    margin-bottom: 0;
+}
+
+.process h2 {
+    margin-top: 60px;
+}
+
+.process p {
+    margin: 25px 0;
+}
+
+.process figure {
+    text-align: center;
+    margin: 40px 0;
+
+}
+
+.process figure img {
+    width: 100%;
+    /* Make the image fill the width of the figure container */
+    max-width: 600px;
+    /* Set a maximum width for the image */
+}
+
+
+
+@media screen and (max-width:750px) {
+    .process {
+        margin: 0 5px;
+    }
+
+
+}
+
+@media screen and (max-width:900px) {
+    .process {
+        margin: 0 15px;
+    }
+
+    .process h2 {
+        text-align: right;
+        width: 100%;
+        padding-right: 0;
+        margin-top: 85px;
+    }
+
+    /* .process figure {
+        width: 100%;
+        margin: 0;
+        max-width: none;
+
+    }
+
+    .process img {
+        width: 100%;
+        margin: 0;
+        max-width: none;
+
+    } */
+
+}
+
+
+
+.links {
+    margin: 50px 10px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a {
+    font-size: 1em;
+    color: black;
+    cursor: pointer;
+}
