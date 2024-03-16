@@ -1,0 +1,111 @@
+.container {
+  margin-left: 15em;
+}
+
+.body-container {
+  margin: 0 auto;
+  max-width: 700px;
+}
+@media screen and (max-width: 900px) {
+  .container {
+    margin: 0 2em;
+  }
+}
+
+.primary-header {
+  display: flex;
+  position: relative;
+}
+
+.primary-header img {
+  position: absolute;
+  top: 0;
+  z-index: -99;
+  padding-left: 10em;
+}
+
+h1,
+h2,
+h3 {
+  padding: 0.8em 0;
+}
+
+p {
+  max-width: 800px;
+  padding: 1em 0;
+  line-height: 1.5em;
+  font-size: 1em;
+}
+
+li {
+  margin-left: 2em;
+}
+
+li::marker {
+  color: orange;
+  font-size: 2em;
+}
+
+.highlight {
+  background-color: orange;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.1em;
+}
+
+.flex {
+  display: flex;
+  gap: 5em;
+}
+
+.flex-item p {
+  padding: 0;
+}
+
+.w-img {
+  display: block;
+  margin-left: 15em;
+  margin-right: auto;
+  width: 55%;
+}
+@media screen and (max-width: 900px) {
+  .w-img {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+m-img {
+  display: block;
+  max-width: 300px;
+}
+/* mobile: remove padding */
+
+#hero {
+  height: 600px;
+  position: relative;
+  width: 100%;
+}
+
+#hero img {
+  width: 100%;
+  height: inherit;
+  object-fit: cover;
+}
+
+#hero .container {
+  background-color: var(--background);
+  position: absolute;
+  top: 40%;
+  padding: 2em;
+  width: 300px;
+}
+
+#hero button {
+  min-width: 170px;
+  max-width: 170px;
+}
+
+#overview {
+  padding-top: 9em;
+}

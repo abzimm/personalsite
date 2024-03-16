@@ -1,157 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abby Zimmerman</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abby Zimmerman </title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+  <body>
+    <!-- navbar -->
+    <nav role="navigation" aria-label="Main Navigation">
+      <div class="navbar">
+        <a href="#" class="logo"> AZ </a>
+        <ul class="nav-links">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#play">Play</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+    </nav>
 
-<body style="background-color: #ececec;  color: #03072E;     font-family: 'Manrope', sans-serif;;">
-    <!-- <svg xmlns="http://www.w3.org/2000/svg"
-        style="position: absolute; top: 0; left: 0; z-index: -1; width: 100%; height: auto;">
-        <circle cx="-10%" cy="100%" r="40%" fill="#FF0000" />
-    </svg> -->
-    <!-- header: picture and introduction -->
-    <header>
-        <div class="header">
-            <div>
-                <!-- <img src="assets\sun.svg" id="sun"> -->
-                <img src="assets\icon.svg" class="icon">
-            </div>
-            <div>
-                <h1 style="  font-family: 'Fauna One', serif;"> Good
-                    <span style="color: #7AC7B4;"> </span>.
-                </h1>
-                </h1>
-                <h2> I'm an interactive design student specializing in UX and web development. </h2>
-            </div>
+    <!-- welcome -->
+
+    <section id="welcome">
+      <div class="container">
+        <h3>
+          Abby is studying interactive design @ the University of Pittsburgh.
+          She enjoys satisfying pens, <span> doodling cats</span> visual
+          creation, and making tech more friendly and accessible.
+        </h3>
+        <div class="button-row">
+          <button>Contact</button>
+          <button>Resume</button>
         </div>
-    </header>
+      </div>
+    </section>
 
-    <main>
+    <!-- work -->
+    <section id="work">
+      <div class="container section-header">
+        <h1>work.</h1>
+        <img src="worky.svg" style="margin-bottom: -40px" />
+      </div>
 
-        <!-- main: projects and about  -->
-        <div class="tabnav" id="tabNav">
-            <button class="tab-btn" onclick="openTab('projects', this)">projects</button>
-            <button class="tab-btn" onclick="openTab('about', this)">about</button>
+      <!-- perch -->
+      <div class="project-container">
+        <div class="project-text">
+          <h4>PRODUCT DESIGN</h4>
+          <h2>Perch</h2>
+          <p>An app where you can focus with friends.</p>
+          <button>View Study</button>
         </div>
-
-        <div class="tabcontent" id="projects-tab">
-
-
-            <div class="projects-container">
-                <div class="projects-card">
-                    <h3> Kiosk: Metamodern Media </h3>
-                    <h2> Designer | Developer</h2>
-                    <img src='assets\metamodern\hero_mm.png'>
-                    <div class="project-links">
-                        <a class="button1" href="metamodernstudy.html"> Case Study -> </a>
-                        <a class="button2" href="https://abzimm.github.io/metamodern_media/index.html" target="_blank">
-                            Live Site ->
-                        </a>
-                    </div>
-                </div>
-
-                <div class="projects-card">
-                    <h3> Site Redesign: Open Lab </h3>
-                    <h2> Designer</h2>
-                    <img src='assets\openlab\openlab_wireframe.png'>
-
-                    <div class="project-links">
-                        <a class="button1" href="openlab.html"> Case Study -> </a>
-                        <a class="button2"> In development!
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-
+        <div class="project-image">
+          <img src="e4bae97039590f752f0c989bc7e151f0.jpg" />
         </div>
+      </div>
 
-        <div class="tabcontent" id="about-tab">
-
-            <div class="about-container">
-                <h2>Nice to meet you! </h2>
-                <p> I'm Abby, a Digital Narrative & Interactive Design student at the University of
-                    Pittsburgh, with minors in Information Science and Korean. <br><br> I love all things UX/UI, and I
-                    constantly push myself to learn new technology so that I can build out my dream designs. Right now
-                    I'm learning React, and next on my list is Three.js and Raspberry Pi. On campus, I work at a
-                    makerspace lab--most of my time between classes is spent trying to keep our 3D printers alive.
-                    <br><br> Other things I enjoy are digital art, playing games, philosophy,
-                    post-punk music, and bothering my cat.
-                    <br><br>
-                    This site was built by me!
-                </p>
-            </div>
+      <!-- open lab -->
+      <div class="project-container">
+        <div class="project-text">
+          <h4>UI/UX</h4>
+          <h2>Open Lab</h2>
+          <p>
+            Redesigning the website for the University of Pittsburgh's 3D
+            makerspace.
+          </p>
+          <button>View Study</button>
         </div>
+        <div class="project-image">
+          <img src="openlab\long_test.svg" />
+        </div>
+      </div>
 
-    </main>
+      <div class="project-container">
+        <div class="project-text">
+          <h4>CREATIVE TECHNOLOGY</h4>
+          <h2>Kiosk: Metamodern Media</h2>
+          <p>Developing an interactive display for academic research.</p>
+          <button>
+            <a href="metamodern.html" target="_blank"> View Study </a>
+          </button>
+        </div>
+        <div class="project-image">
+          <img src="metamodern\mm_long (2).svg" />
+        </div>
+      </div>
+    </section>
 
-    <footer style="    background-color: #C0745E;
-    height: 100%;
-    width: 100%;
-    border-top: 2px solid black;
-    margin: 0;
-    padding: 1;
-    display: flex;
-    justify-content: space-between;">
+    <!-- play -->
+    <section>
+      <div class="container section-header">
+        <h1>play.</h1>
+        <img src="yarn.svg" style="margin-bottom: -50px" />
+      </div>
 
-        <h3> abzimm02@gmail.com </h3>
+      <div class="container">
+        <div class="bento-grid">
+          <div class="bento-item item-1">
+            <img src="e4bae97039590f752f0c989bc7e151f0.jpg" alt="Image 1" />
+          </div>
+          <div class="bento-item item-2">
+            <img src="e4bae97039590f752f0c989bc7e151f0.jpg" alt="Image 2" />
+          </div>
+          <div class="bento-item item-3">
+            <img src="e4bae97039590f752f0c989bc7e151f0.jpg" alt="Image 3" />
+          </div>
+          <div class="bento-item item-4">
+            <img src="e4bae97039590f752f0c989bc7e151f0.jpg" alt="Image 4" />
+          </div>
+          <div class="bento-item item-5">
+            <img src="e4bae97039590f752f0c989bc7e151f0.jpg" alt="Image 5" />
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- <h3> site created by me &#x1F389; </h3> -->
+    <!-- about -->
+    <section>
+      <div class="container section-header">
+        <h1>about.</h1>
+        <!-- <img src="Group 1.png" /> -->
+      </div>
+    </section>
 
-    </footer>
-
-
-
-    <script>
-
-
-        var currentDate = new Date();
-        var currentHour = currentDate.getHours();
-        var greeting;
-
-        if (currentHour >= 5 && currentHour < 12) {
-            greeting = " morning";
-        } else if (currentHour >= 12 && currentHour < 18) { greeting = "afternoon"; } else {
-            greeting = "evening";
-        } // Use innerHTML to allow customization within the <span>
-        document.querySelector("span").innerHTML = greeting;
-
-
-
-
-        document.addEventListener("DOMContentLoaded", function () {
-            openTab('projects', document.querySelector('.tab-btn'));
-        });
-
-        function openTab(tabName, button) {
-            // Hide all tab contents
-            var tabContents = document.querySelectorAll('.tabcontent');
-            tabContents.forEach(function (tabContent) {
-                tabContent.style.display = 'none';
-            });
-
-            // Remove active class from all buttons
-            var tabButtons = document.querySelectorAll('.tab-btn');
-            tabButtons.forEach(function (tabButton) {
-                tabButton.classList.remove('active');
-            });
-
-            // Show the selected tab content
-            document.getElementById(tabName + '-tab').style.display = 'block';
-
-            // Add active class to the clicked button
-            button.classList.add('active');
-        }
-
-
-
-
-    </script>
-
-</body>
-
+    <!-- footer -->
+    <footer></footer>
+  </body>
 </html>
