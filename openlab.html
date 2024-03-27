@@ -22,21 +22,16 @@
 
     <!-- hero -->
     <section id="hero">
-      <img src="e4bae97039590f752f0c989bc7e151f0.jpg" />
-      <div class="container">
-        <h1>Open Lab</h1>
-        <!-- <p>A focus app with friends.</p> -->
-        <button>View Figma file</button>
-      </div>
+      <img src="openlab\cover (3).svg" />
     </section>
 
     <!-- overview -->
     <section id="overview">
       <!-- header -->
       <div class="primary-header">
-        <img src="worky.svg" />
+        <img src="Rectangle 27.svg" />
         <div class="container">
-          <h2>Overview</h2>
+          <h1>Open Lab</h1>
         </div>
       </div>
       <!-- content-->
@@ -49,7 +44,7 @@
           navigating through it.
         </p>
         <!-- flex -->
-        <div class="flex">
+        <!-- <div class="flex">
           <div class="flex-item">
             <h3>Time</h3>
             <p>1 week</p>
@@ -65,7 +60,7 @@
             <h3>Deliverable</h3>
             <p>Design file to hand off to Pitt IT developers</p>
           </div>
-        </div>
+        </div> -->
         <!-- problem -->
         <h3><b>Context</b></h3>
         <p>
@@ -75,126 +70,208 @@
           <span class="highlight">“I went to the website, but...”</span>
         </p>
         <p>
-          Myself, the head of Open Lab, and five other staff members sat down to
-          review the problems. Eventually, we outlined two main goals.
+          Myself, the head of Open Lab, and three other staff members sat down
+          to review the problems. Eventually, we outlined two main goals.
         </p>
         <ul>
-          <li><p>Differentiate student and faculty needs</p></li>
-          <li><p>Remove bloat and outdated information</p></li>
+          <li>
+            <p><b>Differentiate student and faculty needs </b></p>
+          </li>
+          <li>
+            <p><b>Remove bloat and outdated information </b></p>
+          </li>
         </ul>
-        <p>
-          With these insights, I then focused on specific aspects of the
-          website.
-        </p>
       </div>
     </section>
 
-    <!-- 1 -->
+    <!-- 01 PROBLEM: MESSY USER JOURNEY-->
     <section class="step">
       <!-- header -->
       <div class="primary-header">
-        <img src="worky.svg" />
+        <img src="corcle.svg" />
         <div class="container">
-          <h2>01. A Cleaner User Journey</h2>
+          <h2>01. Messy User Journey</h2>
         </div>
       </div>
-      <!-- content -->
-      <div class="container">
-        <p>
-          Immediately, the user sees lots of text from all directions. Their
-          first call to action is to open external links.
-        </p>
-      </div>
-      <!-- img full -->
-      <img class="w-img" src="openlab\before.svg" />
-      <div class="container">
-        <p>
-          To rectify this, I plotted out the user journeys of both students and
-          professors. I based this upon my personal, year-long work experience
-          of helping various members.
-        </p>
-        <!-- img small -->
-        <img class="w-img" src="worky.svg" />
-        <p>
-          Finally, I used my journeys to inform the design for the hero section.
-          I added a carousel of images to visually explain what the space was,
-          which helps ease information overload. The two buttons were expanded
-          into two pathways for exploring the site - since this was the main
-          reason for visiting, I added explicit titles and descriptions.
-        </p>
-      </div>
-      <img class="w-img" src="openlab\afte.svg" />
-    </section>
 
-    <!-- 2 -->
-    <section class="step">
-      <!-- header -->
-      <div class="primary-header">
-        <img src="worky.svg" />
-        <div class="container">
-          <h2>02. Keeping it Simple</h2>
-        </div>
-      </div>
-      <!-- content -->
       <div class="container">
+        <h3>First Impressions</h3>
         <p>
-          Since the stakeholders prioritized a simple, direct approach, my next
-          action was deciding what content to remove.
+          The biggest problem we identified was the confusing landing section of
+          the website. Newcomers to the site were instantly redirected to
+          different links. This could work for someone who wanted an in-depth
+          overview, but it was frustrating for people who wanted
+          <span class="highlight"> simple questions answered</span>.
         </p>
-        <!-- flex -->
+        <img src="openlab\buttonproblm.svg" />
+
+        <h3>Empathizing with New Members</h3>
+        <p>
+          To better understand what a clear user pathway could look like, I
+          considered the unique pain points that students and faculty could
+          have. Since I've worked at Open Lab for over a year, I was already
+          familiar with many of the complaints people had about the website.
+          Many users would view it out of curiosity, or because they had a
+          specific project they wanted to create, but would often get lost in
+          the abundance of links and redirects.
+        </p>
+        <img src="openlab\journey.svg" />
+
         <div class="flex">
-          <div class="flex-item">
-            <img class="m-img" src="openlab\Group 1 (1).svg" />
-          </div>
-          <div class="flex-item">
+          <div>
+            <h3><b> Solution: Focused Purpose </b></h3>
             <p>
-              All of the services and equipment had their own seperate page.
-              <span class="highlight"> This was heavily redunant,</span> as all
-              of the information could be found in Open Lab's Canvas page, which
-              the user was already being directed toward. Additionally, most of
-              it was outdated - the amount of services had doubled since the
-              site's creation.<br /><br />
-              Since these extra pages weren't needed, I reduced them to simple
-              visual icons on the main page. The vectors are from badges
-              collected during the Canvas training modules.
+              To remedy this,
+              <span class="highlight">
+                I distilled the site's purpose into two main actions </span
+              >: how students can become a member, and how faculty can get
+              consultations. This action-based approach would keep people on the
+              site for longer and direct them to exactly what they needed to
+              know. By using anchors, they wouldn't instantly be redirected to
+              another window.
+            </p>
+          </div>
+          <div>
+            <img src="openlab\wwd.svg" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 PROBLEM: OUTDATED INFORMATION -->
+    <section class="step">
+      <!-- header -->
+      <div class="primary-header">
+        <img src="corcle.svg" />
+        <div class="container">
+          <h2>02. Information Bloat</h2>
+        </div>
+      </div>
+
+      <div class="container">
+        <h3>Old Content</h3>
+        <p>
+          The second biggest problem was the outdated information. Since the
+          site hadn't been updated for years, new pieces of equipment were
+          nowhere to be found.
+        </p>
+        <img src="openlab\techproblm.svg" />
+
+        <div class="flex">
+          <div>
+            <p>
+              Additionally, clicking on the technology links brought users to a
+              lengthy FAQ page. This was heavily
+              <span class="highlight">redundant</span>, since the Canvas page
+              covered all these details in a better, more modern fashion. In
+              short - the additional pages conflated the purpose of the website
+              with Open Lab's Canvas page, and as my stakeholders wanted things
+              as simple as possible, we decided to cut these extra pages.
+            </p>
+          </div>
+          <div>
+            <img src="openlab\Screenshot 2024-03-15 140223.png" />
+          </div>
+        </div>
+
+        <div class="flex">
+          <div>
+            <h3><b> Solution: Show What's Necessary </b></h3>
+            <img src="openlab\services (1).svg" />
+          </div>
+          <div>
+            <p>
+              To account for the new additions and the succinct design goals, I
+              then reduced this section to visual badges of each available
+              service. By doing this, we could afford more scalability and
+              display everything at a glance. It's a better portrayal of the
+              <span class="highlight"> large variety</span> of technology at
+              members' disposal, and cuts out any overlap with the Canvas page.
             </p>
           </div>
         </div>
-        <h4>
-          *If I did this again, I would figure out a way to still include
-          descriptions about the equipment. We were so focused on reducing bloat
-          that I wanted to cut everything in sight.
-        </h4>
-        <div class="flex">
-          <p>
-            Similarly, most student projects displayed were very old. I
-            streamlined this to a banner linking to the Instagram, where more
-            recent projects could be found.
-          </p>
-          <img />
-        </div>
-
-        <!-- img small -->
-        <img class="w-img" src="worky.svg" />
-        <p>
-          Finally, I used my journeys to inform the design for the hero section.
-          I added a carousel of images to visually explain what the space was,
-          which helps ease information overload. The two buttons were expanded
-          into two pathways for exploring the site - since this was the main
-          reason for visiting, I added explicit titles and descriptions.
-        </p>
       </div>
     </section>
 
-    <!-- 3 -->
+    <!-- 03 DESIGN SYSTEM -->
     <section class="step">
-      <div class="container">
-        <img
-          style="width: 100%"
-          src="openlab\Screenshot 2024-03-15 235610.png"
-        />
+      <!-- header -->
+      <div class="primary-header">
+        <img src="corcle.svg" />
+        <div class="container">
+          <h2>03. Design System</h2>
+        </div>
       </div>
+      <!-- content -->
+      <div class="container">
+        <h3>Atomic Design Components</h3>
+        <p>
+          <b>
+            My main challenge for the final design was the limited amount of
+            time I had.
+          </b>
+          Due to this constraint, most of my energy went toward creating
+          <span class="highlight">
+            modular components that could be easily rearranged</span
+          >. Since I wasn't in direct contact with the development team, this
+          would be helpful for ensuring certain aspects were intact, while
+          granting them the freedom to do as they pleased.
+        </p>
+
+        <img src="openlab\STYLE1.svg" />
+        <img src="openlab\STYLE2.svg" />
+
+        <div class="flex" style="align-self: start">
+          <div>
+            <h3>Final Design</h3>
+            <p>
+              Hhhhhhhhhhhhhhhhhhhhh <br />
+              <br />
+              HHHHHHHHHHHHHHHH
+            </p>
+          </div>
+          <img src="openlab\primary.svg" style="width: 15%" />
+        </div>
+      </div>
+      <!--  -->
     </section>
+
     <!-- footer -->
+
+    <script>
+      const options = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.1,
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+          } else {
+            entry.target.classList.remove("is-visible");
+          }
+        });
+      }, options);
+
+      //   COPY AND PASTE TO ADD MORE ANIMATIONS
+      const sections = document.querySelectorAll(".step");
+
+      const fade = document.querySelectorAll(".fade");
+      const up = document.querySelectorAll(".up");
+
+      sections.forEach((section) => {
+        observer.observe(section);
+      });
+
+      fade.forEach((img) => {
+        observer.observe(img);
+      });
+
+      up.forEach((img) => {
+        observer.observe(img);
+      });
+    </script>
   </body>
 </html>

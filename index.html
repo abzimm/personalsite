@@ -22,16 +22,16 @@
 
     <!-- welcome -->
 
-    <section id="welcome">
+    <section id="welcome" class="step">
       <div class="container">
         <h3>
           Abby is studying interactive design @ the University of Pittsburgh.
-          She enjoys satisfying pens, <span> doodling cats</span> visual
-          creation, and making tech more friendly and accessible.
+          She enjoys satisfying pens, <span> doodling cats</span> striking
+          visuals, and making tech more friendly and accessible.
         </h3>
         <div class="button-row">
-          <button>Contact</button>
-          <button>Resume</button>
+          <button><a href="#about">Contact</a></button>
+          <button><a>Resume</a></button>
         </div>
       </div>
     </section>
@@ -40,24 +40,24 @@
     <section id="work">
       <div class="container section-header">
         <h1>work.</h1>
-        <img src="worky.svg" style="margin-bottom: -40px" />
+        <img src="movecat.svg" style="margin-bottom: -30px" />
       </div>
 
       <!-- perch -->
-      <div class="project-container">
+      <div class="project-container fade">
         <div class="project-text">
           <h4>PRODUCT DESIGN</h4>
           <h2>Perch</h2>
-          <p>An app where you can focus with friends.</p>
-          <button>View Study</button>
+          <p>An relaxed focus app with a social approach.</p>
+          <button><a href="perch.html">View Study</a></button>
         </div>
-        <div class="project-image">
-          <img src="e4bae97039590f752f0c989bc7e151f0.jpg" />
+        <div class="project-image up">
+          <img src="HERO_FINAL.svg" />
         </div>
       </div>
 
       <!-- open lab -->
-      <div class="project-container">
+      <div class="project-container fade">
         <div class="project-text">
           <h4>UI/UX</h4>
           <h2>Open Lab</h2>
@@ -65,14 +65,14 @@
             Redesigning the website for the University of Pittsburgh's 3D
             makerspace.
           </p>
-          <button>View Study</button>
+          <button><a href="openlab.html">View Study</a></button>
         </div>
-        <div class="project-image">
-          <img src="openlab\long_test.svg" />
+        <div class="project-image up">
+          <img src="test (1).svg" />
         </div>
       </div>
 
-      <div class="project-container">
+      <div class="project-container fade">
         <div class="project-text">
           <h4>CREATIVE TECHNOLOGY</h4>
           <h2>Kiosk: Metamodern Media</h2>
@@ -81,49 +81,127 @@
             <a href="metamodern.html" target="_blank"> View Study </a>
           </button>
         </div>
-        <div class="project-image">
-          <img src="metamodern\mm_long (2).svg" />
-        </div>
-      </div>
-    </section>
-
-    <!-- play -->
-    <section>
-      <div class="container section-header">
-        <h1>play.</h1>
-        <img src="yarn.svg" style="margin-bottom: -50px" />
-      </div>
-
-      <div class="container">
-        <div class="bento-grid">
-          <div class="bento-item item-1">
-            <img src="e4bae97039590f752f0c989bc7e151f0.jpg" alt="Image 1" />
-          </div>
-          <div class="bento-item item-2">
-            <img src="e4bae97039590f752f0c989bc7e151f0.jpg" alt="Image 2" />
-          </div>
-          <div class="bento-item item-3">
-            <img src="e4bae97039590f752f0c989bc7e151f0.jpg" alt="Image 3" />
-          </div>
-          <div class="bento-item item-4">
-            <img src="e4bae97039590f752f0c989bc7e151f0.jpg" alt="Image 4" />
-          </div>
-          <div class="bento-item item-5">
-            <img src="e4bae97039590f752f0c989bc7e151f0.jpg" alt="Image 5" />
-          </div>
+        <div class="project-image up">
+          <img src="metamodern\mm_long (1).png" />
         </div>
       </div>
     </section>
 
     <!-- about -->
-    <section>
+    <section id="about">
       <div class="container section-header">
-        <h1>about.</h1>
+        <h1>contact.</h1>
         <!-- <img src="Group 1.png" /> -->
+      </div>
+
+      <div class="container">
+        <form action="https://formspree.io/f/mdoqwaob" method="POST">
+          <label>
+            Email:
+            <input type="email" name="email" />
+          </label>
+          <label>
+            Message:
+            <textarea name="message"></textarea>
+          </label>
+          <!-- your other form fields go here -->
+          <button type="submit"><a>Send</a></button>
+        </form>
       </div>
     </section>
 
     <!-- footer -->
     <footer></footer>
+
+    <script>
+      const options = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.1,
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+          } else {
+            entry.target.classList.remove("is-visible");
+          }
+        });
+      }, options);
+
+      //   COPY AND PASTE TO ADD MORE ANIMATIONS
+      const sections = document.querySelectorAll(".step");
+      const move_left = document.querySelectorAll(".move-in-left");
+      const move_right = document.querySelectorAll(".move-in-right");
+      const fade = document.querySelectorAll(".fade");
+      const up = document.querySelectorAll(".up");
+
+      sections.forEach((section) => {
+        observer.observe(section);
+      });
+
+      move_left.forEach((p) => {
+        observer.observe(p);
+      });
+
+      move_right.forEach((p) => {
+        observer.observe(p);
+      });
+
+      fade.forEach((img) => {
+        observer.observe(img);
+      });
+
+      up.forEach((img) => {
+        observer.observe(img);
+      });
+
+      function resizeGallery() {
+        const gallery = document.querySelector(".bento-gallery");
+        const images = gallery.querySelectorAll(".bento-image");
+        let maxHeight = 0;
+
+        // Reset height for all images
+        images.forEach((img) => {
+          img.style.height = "auto";
+        });
+
+        // Calculate maximum height based on viewport width
+        const viewportWidth = Math.max(
+          document.documentElement.clientWidth,
+          window.innerWidth || 0
+        );
+        if (viewportWidth >= 768) {
+          // 3x2 grid layout for larger screens
+          const columnWidth = gallery.offsetWidth / 3;
+          images.forEach((img) => {
+            const aspectRatio = img.naturalWidth / img.naturalHeight;
+            const imageHeight = columnWidth / aspectRatio;
+
+            if (imageHeight > maxHeight) {
+              maxHeight = imageHeight;
+            }
+          });
+        } else {
+          // Single column layout for smaller screens
+          maxHeight = Math.max(
+            ...Array.from(images).map((img) => {
+              const aspectRatio = img.naturalWidth / img.naturalHeight;
+              const containerWidth = gallery.offsetWidth;
+              return containerWidth / aspectRatio;
+            })
+          );
+        }
+
+        // Set height for all images
+        images.forEach((img) => {
+          img.style.height = `${maxHeight}px`;
+        });
+      }
+
+      window.addEventListener("load", resizeGallery);
+      window.addEventListener("resize", resizeGallery);
+    </script>
   </body>
 </html>

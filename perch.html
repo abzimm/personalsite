@@ -20,29 +20,296 @@
       </div>
     </nav>
 
-    <!-- hero -->
-    <section id="hero">
-      <img src="e4bae97039590f752f0c989bc7e151f0.jpg" />
-      <div class="container">
-        <h1>Perch</h1>
-        <!-- <p>A focus app with friends.</p> -->
-        <button>View Prototype</button>
-      </div>
-    </section>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Perch</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="study.css" />
+      </head>
+      <body>
+        <!-- nav -->
+        <nav role="navigation" aria-label="Main Navigation">
+          <div class="navbar">
+            <a href="#" class="logo"> AZ </a>
+            <ul class="nav-links">
+              <li><a href="index.html#work">Work</a></li>
+              <li><a href="index.html#play">Play</a></li>
+              <li><a href="index.html#about">About</a></li>
+            </ul>
+          </div>
+        </nav>
+    
+        <!-- hero -->
+        <section id="hero">
+          <img src="perch\cover (2).svg" />
+        </section>
+    
+        <!-- overview -->
+        <section id="overview" class="step">
+         
+          <!-- header -->
+          <div class="primary-header">
+            <img src="Rectangle 27.svg" />
+            <div class="container">
+              <h1>Perch</h1>
+            </div>
+          </div>
+          <!-- content-->
+          <div class="container">
+            <button>
+              <a
+                href="https://abzimm.github.io/metamodern_media/index.html"
+                target="_blank"
+              >
+                View Prototype
+              </a>
+            </button>
 
-    <!-- overview -->
-    <section id="overview">
-        <div class="section-header">
-          <img src="worky.svg" />
-          <h2>Overview</h2>
-        </div>
-      </div>
-      <video width="250" height="500" autoplay muted controls>
-        <source src="perch\Perchlofi(1).mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    </section>
+    <br/>
+            <p>
+              <i> Metamodern Media </i> was the final assignment for my Fall 2023
+              Projects in Digital Composition class. We were tasked with creating an
+              interactive kiosk display based on our chosen topic. Since the
+              projects would be put on public display, they were meant to be as
+              accessible and user-friendly as possible.
+            </p>
+            <!-- flex -->
+            <!-- <div class="flex">
+              <div class="flex-item">
+                <h3>Time</h3>
+                <p>2 weeks</p>
+              </div>
+              <div class="flex-item">
+                <h3>Tools</h3>
+                <p>
+                  HTML/CSS/JavaScript<br />Figma <br />
+                  Chrome Kiosk App
+                </p>
+              </div>
+              <div class="flex-item" style="max-width: 200px;">
+                <h3>Deliverable</h3>
+                <p>Functional interactive experience</p>
+              </div>
+            </div>
+          </div> -->
+        </section>
+    
+        <!-- 1 -->
+        <section class="step">
+          <!-- header -->
+          <div class="primary-header" >
+            <img src="corcle.svg"  />
+            <div class="container">
+              <h2>01. What makes Perch stand out?</h2>
+            </div>
+          </div>
+          <!-- content -->
+          <div class="container">
+            <h3> Competetive Analysis </h3> 
+            <p>
+             Since focus apps are such a popular concept, I tested 4 of the most popular ones of the Play Store to see which features were most popular. I outlined what I liked and disliked about each app. My personal experience always felt discouraging - it felt like the app was working against me, instead of working with me and my personal needs. 
+            </p>
+          </div>
+            <!-- competetive analysis graphic -->
+            <div class="flex">
+            <img src="perch\minimalist (1).svg">
+            <img src="perch\unpluq.svg">
+            <img src="perch\stayfree.svg">
+            <img src="perch\forest.svg">
+            </div>
+            <!--  -->
+            <div class="container">
+            <h3> User Research </h3>
+            <p> Based on my competetive analysis, I created a Qualtrics survey that was taken by 10 of my peers. The questions focused on their feelings about focus tools, the effectiveness of common features, and what their ideal focus tool would look like. I was able to gather some interesting insights: </p>
+            <ul>
+              <li><p><b>There's still a gap in the market-</b><span class="highlight">90% of participants had tried a focus app before, but found it NOT helpful</span>.</p></li>
+              <li><p><b> There's no one-size-fits-all solution.</b> When asked about their ideal focus tool, there wasn't a consistent answer: “Something to relax my brain.”
+                “Study music, soft alarms for distractions, strict app blocking.”
+                “Time tracking / blocking, maybe internal playlists, incentives to continue working.”</p></li>       
+                
 
+                <div class="flex" style="margin:5em 0;">
+                  <div>
+                  <h3> <b> Solution: Focus with Friends </b> </h3>
+                <p> But there was one answer in particular that stuck out to me: <span class="highlight"> "...the sense that other people around me are also completing tasks. </span> As a college student, studying in public with my friends has always been helpful - the "body doubling" effect enforces accountability in a low stress way. Also, other focus apps lacked a social angle. With this in mind, I wanted my design to <b> stand out by allowing the user to see others focusing</b>. <br> <br> By displaying the user's friends as birds "perching", the social aspect is reinforced without being overly distracting. It indicates only timers and names, and customizing the bird allows for self expression. </p> </div>
+                <!-- "perch" screenshots  -->
+                <video class="video" autoplay muted loop>
+                  <source src="perch\Friends Final.mp4" type="video/mp4" />
+                </video>
+              </div>
+                <!--  -->
+
+              <img>
+              </div>
+
+          
+            </section>
+    
+
+    
+        <!-- 2 -->
+        <section class="step">
+          <!-- header -->
+          <div class="primary-header">
+            <img src="corcle.svg" />
+            <div class="container">
+              <h2>02. How do I account for different needs? </h2>
+            </div>
+          </div>
+          <!-- content -->
+          <div class="container">
+
+            <h3> User Personas + User Flow </h3>
+            <p> Based on my survey answers, I created two distinct user personas. The stand-out insight was that people had diverse needs and wants for a focus app, so my design should be low stakes, flexible, and adaptable.</p>
+           <!-- PERSONA -->
+           <div id="personas">
+        <img  src="perch\guh_.svg">
+           </div>
+           <!--  -->
+                        <p> I created a user flow to get a better sense of how this would play out. This clarified the features further, and made me think about aspects like editing a session or ending it early. </p>
+          </div>
+                        <!-- FLOW -->
+                        <div id="flow">
+                        <img src="perch\flow.png">
+                        </div>
+
+                      
+<div class="container">
+            <div class="flex">
+              <div> 
+              <h3> <b> Solution: Customizing the Focus Session </b> </h3>
+            <p> When reviewing the disparity between current focus apps and my survey responses, I reached a key conclusion: <b> currently, users had to adapt to the app, not the other way around</b>. I felt like this was antithetical to creating a good productive environment - any friction should be opted into, not an automatic design feature. Out of the most popular features, I chose to incorporate app blocking and varying levels of "distraction barriers", <span class="highlight"> as only the user could know <u> what </u> they wanted blocked and <u> how</u> they wanted it blocked</span>. </p>
+              </div>
+          
+            
+            <!-- focus session -->
+            <video class="video"autoplay muted loop>
+              <source src="perch\Focus Final.mp4" type="video/mp4" />
+            </video>
+           </div>
+
+          
+
+
+            <div>
+            <h3> <b> Solution: Gentle Reinforcement </b> </h3>
+            <p> Another big divide was whether or not people enjoyed gamification features, like getting points and rewards. I decided to have a non-invasive shop - it wouldn't take away attention from the app's purpose, but it would provide a relaxed incentive, and played nicely into showing off to your friends. </p>
+            <video class="video" autoplay muted loop>
+              <source src="perch\Shop(1).mp4" type="video/mp4" />
+            </video>
+            </div>
+
+
+            <!-- readmore -->
+          </div>
+        </section>
+
+
+
+        <section class="step">
+          <!-- header -->
+          <div class="primary-header">
+            <img src="corcle.svg" />
+            <div class="container">
+              <h2>03. Prototype + Final Design </h2>
+            </div>
+          </div>
+          <!-- content -->
+          <div class="container">
+           <h3> Usability Testing </h3>
+           <p> I created an interactive prototype in Figma to begin blocking out the final product. I incorporated my my design insights by prioritizing social and customizable features. Then, I asked 5 of the original survey respondents to accomplish tasks and give their opinions. </p> 
+           <!--  -->
+           <div id="flow">
+       <img src="perch\LOW_FIDELITy (1).svg">
+           </div>
+          <!-- lofi-->
+
+
+
+           <p> The overall impression was positive: 
+            <ul><li><p> Having a more written-out onboarding would be nice, particularly for accessibility and screen readers. </p></li>
+            <li> <p> All respondents would use it in real life, and felt that "perching" with others was a definite motivator. One reported that the app was <span class="highlight"> "still on their mind"</span> after the testing, as they wanted the same degree of freedom in current apps being used. </p></li>
+            <li><p> All respondents wanted to give their bird a fun hat. </p></li></ul>
+            <h3> Hifi Prototype </h3>
+            <p> I assembled a moodboard and style guide for the overall look and feel of the app. I wanted it to feel calming and serene, so I looked to other zen-like apps for inspiration. With my styling, I created various components and icons to assemble the final design.</p>
+                   <!-- styling -->
+                   <div id="flow">
+                   <img src="perch\STYLING.svg">
+                   </div>
+
+                   <h3> Interactive Prototype </h3>
+          </div>
+
+
+          <div class="iframe-container">
+          <iframe class="figma-iframe" style="border: 1px solid rgba(0, 0, 0, 0.1);" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FQ74hWXpbYIJhFfnurZEnRG%2FPerch%253A-Focus-with-Friends%3Ftype%3Ddesign%26node-id%3D270-4613%26t%3DugydxYpgPrcN3AHJ-1%26scaling%3Dscale-down%26page-id%3D96%253A3%26starting-point-node-id%3D198%253A207%26mode%3Ddesign" allowfullscreen></iframe>
+          </div>
+
+
+        
+        </section>
+    
+    <!-- outcome -->
+    
+        <section class="step">
+           <div class="primary-header">
+            <img src="Rectangle 27.svg" />
+            <div class="container">
+              <h1>Looking Ahead</h1>
+            </div>
+          </div>
+            <div class="container">
+            
+          </div>
+    </section>
+        <!-- footer -->
+    
+        <!-- script -->
+        <script>
+          const options = {
+            root: null,
+            rootMargin: "0px",
+            threshold: 0.1,
+          };
+    
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+              } else {
+                entry.target.classList.remove("is-visible");
+              }
+            });
+          }, options);
+    
+          //   COPY AND PASTE TO ADD MORE ANIMATIONS
+          const sections = document.querySelectorAll(".step");
+
+          const fade = document.querySelectorAll(".fade");
+          const up = document.querySelectorAll(".up");
+    
+          sections.forEach((section) => {
+            observer.observe(section);
+          });
+
+          fade.forEach((img) => {
+            observer.observe(img);
+          });
+    
+          up.forEach((img) => {
+            observer.observe(img);
+          });
+
+          var vid = document.getElementsByClassName("video");
+vid.playbackRate = 10.0;
+      
+        </script>
+      </body>
+    </html>
+    
 
 
     <!-- footer -->
