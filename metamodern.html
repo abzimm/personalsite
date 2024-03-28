@@ -30,7 +30,7 @@
      
       <!-- header -->
       <div class="primary-header">
-        <img src="Rectangle 27.svg" />
+ 
         <div class="container">
           <h1>Metamodern Media</h1>
         </div>
@@ -57,22 +57,20 @@
           projects would be put on public display, they were meant to be as
           accessible and user-friendly as possible.
         </p>
-        <!-- flex -->
-        <div class="flex">
-          <div class="flex-item">
+        <div class="overview">
+          <div class="overview-item">
             <h3>Time</h3>
             <p>2 weeks</p>
           </div>
-          <div class="flex-item">
+          <div class="overview-item">
             <h3>Tools</h3>
             <p>
-              HTML/CSS/JavaScript<br />Figma <br />
-              Chrome Kiosk App
+            HTML/CSS/JavaScript, Chrome Kiosk App, Figma
             </p>
           </div>
-          <div class="flex-item" style="max-width: 200px;">
+          <div class="overview-item" style="max-width: 200px;">
             <h3>Deliverable</h3>
-            <p>Functional interactive experience</p>
+            <p>Interactive Kiosk Display</p>
           </div>
         </div>
       </div>
@@ -84,7 +82,7 @@
       <div class="primary-header" >
         <img src="corcle.svg"  />
         <div class="container">
-          <h2>01. Prototype + Feedback</h2>
+          <h2>01. Ideation + Prototype </h2>
         </div>
       </div>
       <!-- content -->
@@ -96,34 +94,28 @@
           pretty dense and difficult to understand. Most of my ideation was
           spent trying to distill it into a coherent format.
         </p>
+<div id="flow">
+  <img src="metamodern\sketch.png">
+</div>
 
-
-          <h3>Ideas, Ideas, Ideas</h3>
-        </div>
-          <!-- crop -->
-
-          <!-- FIX MOBILE -->
-          <div class="flex">
-         <div class="flex-item"> <img class="m-img" src="metamodern\sketch.png" />  </div>
-         <div class="flex-item">
+          <h3>Finding the Form</h3>
+     
           <p>
             Showcasing media felt like the most straightforward way to explain
             metamodernism. Paired with a historical background/overview, the
             average person could gain an understanding without being
             overwhelmed. I really liked the idea of different modal windows for
             different media categories: it would reduce text on-screen, and keep
-            the main screens mostly visual.
-          </p>
-        </div>
-        </div>
-          <p>
-            My main source of inspiration came from Caleb Sun's
-            <a href="https://vimeo.com/816712731" target="_blank">
+            the main screens mostly visual.  <span class="highlight"> My main source of inspiration came from Caleb Sun's
+            <a style="color:black" href="https://vimeo.com/816712731" target="_blank">
               Guang Yu Kiosk Experience </a
-            >. I really loved the elegant method of displaying various
+            ></span>. I really loved the elegant method of displaying various
             artifacts, and how it's oriented for a touch-based experience.
           </p>
-          <img  class="m-img" src="metamodern\insp.png" />
+         <div id="flow">
+          <img src="metamodern\IMG_0184 1.svg">
+         </div>
+        </div>
         </section>
 
         <section class="step">
@@ -131,7 +123,7 @@
         <p>
           After bouncing around different ideas, my next step was to coalesce
           them into a prototype.
-          <video class="video" autoplay muted controls loop>
+          <video class="mm_video" autoplay muted loop>
             <source src="metamodern\Lofi(1).mp4" type="video/mp4" />
           </video>
         </p>
@@ -157,7 +149,8 @@
       </div>
       <!-- content -->
       <div class="container">
-        <video class="video" autoplay muted controls loop>
+        <p> I addressed my feedback by creating unique interactions for each media type. Books emulated flash cards, movies emulated a video player, and art had tooltips. Though this approach definitely took more effort and the majority of my time, it elevated the project and led to people <span class="highlight"> expressing audible delight when interacting with it</span>.
+        <video class="mm_video" autoplay muted loop>
           <source src="metamodern\Media(1).mp4" type="video/mp4" />
         </video>
       </div>
@@ -176,7 +169,7 @@
          <p> <i> Metamodern Media</i> recieved the following:</p>
           <ul>
             <li> <p> Chosen as the first project for a week-long showcase </p></li>
-            <li> <p> Article written in <a  href="https://pittnews.com/article/186141/news/astonishing-projects-in-digital-composition-students-create-kiosks-for-showcase/"> The Pitt News  </a></p> </span> </li>
+            <li> <p> Article written in <a  style="color:black" href="https://pittnews.com/article/186141/news/astonishing-projects-in-digital-composition-students-create-kiosks-for-showcase/"> The Pitt News  </a></p> </span> </li>
             <li> <p> Selected to be displayed during prospective students' tours </p> </li>
           </ul>
         <img  class="m-img" src="metamodern/Screenshot_20240201_143048_Gallery.jpg" />
@@ -229,6 +222,10 @@
       up.forEach((img) => {
         observer.observe(img);
       });
+
+
+      let vid = document.getElementsByClassName("mm_video");
+vid.playbackRate = 3.0;
     </script>
   </body>
 </html>

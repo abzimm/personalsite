@@ -14,8 +14,8 @@
         <a href="#" class="logo"> AZ </a>
         <ul class="nav-links">
           <li><a href="#work">Work</a></li>
-          <li><a href="#play">Play</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="art.html">Art</a></li>
+          <li><a href="about.html">About</a></li>
         </ul>
       </div>
     </nav>
@@ -45,22 +45,25 @@
 
       <!-- perch -->
       <div class="project-container fade">
+
         <div class="project-text">
-          <h4>PRODUCT DESIGN</h4>
           <h2>Perch</h2>
+          <h4>PRODUCT DESIGN / USER RESEARCH / PROTOTYPING</h4>
           <p>An relaxed focus app with a social approach.</p>
           <button><a href="perch.html">View Study</a></button>
         </div>
+
         <div class="project-image up">
           <img src="HERO_FINAL.svg" />
         </div>
+ 
       </div>
 
       <!-- open lab -->
       <div class="project-container fade">
         <div class="project-text">
-          <h4>UI/UX</h4>
           <h2>Open Lab</h2>
+          <h4>UI/UX / USER JOURNEY / DESIGN SYSTEM</h4>
           <p>
             Redesigning the website for the University of Pittsburgh's 3D
             makerspace.
@@ -74,8 +77,8 @@
 
       <div class="project-container fade">
         <div class="project-text">
-          <h4>CREATIVE TECHNOLOGY</h4>
           <h2>Kiosk: Metamodern Media</h2>
+          <h4>CREATIVE TECHNOLOGY / HTML/CSS/JAVASCRIPT</h4>
           <p>Developing an interactive display for academic research.</p>
           <button>
             <a href="metamodern.html" target="_blank"> View Study </a>
@@ -87,6 +90,11 @@
       </div>
     </section>
 
+
+
+
+
+
     <!-- about -->
     <section id="about">
       <div class="container section-header">
@@ -97,13 +105,15 @@
       <div class="container">
         <form action="https://formspree.io/f/mdoqwaob" method="POST">
           <label>
-            Email:
+            <p>Email Address</p>
             <input type="email" name="email" />
           </label>
           <label>
-            Message:
-            <textarea name="message"></textarea>
-          </label>
+            <p>
+              Message</p>
+              <textarea name="message"></textarea></p
+          ></label>
+
           <!-- your other form fields go here -->
           <button type="submit"><a>Send</a></button>
         </form>
@@ -111,8 +121,13 @@
     </section>
 
     <!-- footer -->
-    <footer></footer>
+   
+    <footer>
+      <p>Made with love &#169; 2024</p>
+      
+    </footer>
 
+  
     <script>
       const options = {
         root: null,
@@ -132,21 +147,11 @@
 
       //   COPY AND PASTE TO ADD MORE ANIMATIONS
       const sections = document.querySelectorAll(".step");
-      const move_left = document.querySelectorAll(".move-in-left");
-      const move_right = document.querySelectorAll(".move-in-right");
       const fade = document.querySelectorAll(".fade");
       const up = document.querySelectorAll(".up");
 
       sections.forEach((section) => {
         observer.observe(section);
-      });
-
-      move_left.forEach((p) => {
-        observer.observe(p);
-      });
-
-      move_right.forEach((p) => {
-        observer.observe(p);
       });
 
       fade.forEach((img) => {
@@ -157,51 +162,28 @@
         observer.observe(img);
       });
 
-      function resizeGallery() {
-        const gallery = document.querySelector(".bento-gallery");
-        const images = gallery.querySelectorAll(".bento-image");
-        let maxHeight = 0;
 
-        // Reset height for all images
-        images.forEach((img) => {
-          img.style.height = "auto";
-        });
 
-        // Calculate maximum height based on viewport width
-        const viewportWidth = Math.max(
-          document.documentElement.clientWidth,
-          window.innerWidth || 0
-        );
-        if (viewportWidth >= 768) {
-          // 3x2 grid layout for larger screens
-          const columnWidth = gallery.offsetWidth / 3;
-          images.forEach((img) => {
-            const aspectRatio = img.naturalWidth / img.naturalHeight;
-            const imageHeight = columnWidth / aspectRatio;
+      const gridItems = document.querySelectorAll('.grid-item');
+let zoomedImg;
 
-            if (imageHeight > maxHeight) {
-              maxHeight = imageHeight;
-            }
-          });
-        } else {
-          // Single column layout for smaller screens
-          maxHeight = Math.max(
-            ...Array.from(images).map((img) => {
-              const aspectRatio = img.naturalWidth / img.naturalHeight;
-              const containerWidth = gallery.offsetWidth;
-              return containerWidth / aspectRatio;
-            })
-          );
-        }
+gridItems.forEach((item) => {
+  item.addEventListener('click', () => {
+    const imgSrc = item.src;
+    if (!zoomedImg) {
+      zoomedImg = document.createElement('img');
+      zoomedImg.classList.add('zoomed');
+      document.body.appendChild(zoomedImg);
+      zoomedImg.addEventListener('click', closeZoomedImg);
+    }
+    zoomedImg.src = imgSrc;
+  });
+});
 
-        // Set height for all images
-        images.forEach((img) => {
-          img.style.height = `${maxHeight}px`;
-        });
-      }
-
-      window.addEventListener("load", resizeGallery);
-      window.addEventListener("resize", resizeGallery);
+function closeZoomedImg() {
+  zoomedImg.remove();
+  zoomedImg = null;
+}
     </script>
   </body>
 </html>

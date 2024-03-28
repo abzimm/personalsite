@@ -102,6 +102,15 @@ video {
   margin: 2em auto;
 }
 
+.mm_video {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); /* 4px y-drop shadow */
+  border-radius: 0px;
+  display: block;
+  width: 80%;
+  height: auto;
+  margin: 2em auto;
+}
+
 @media screen and (max-width: 800px) {
   .flex {
     flex-wrap: wrap;
@@ -184,9 +193,12 @@ video {
     width: 100%;
   }
 }
-/* #overview {
-  margin-top: 2em;
-} */
+
+.overview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3em;
+}
 
 .iframe-container {
   margin: 2em auto;
