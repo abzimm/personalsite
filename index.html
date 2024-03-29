@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abby Zimmerman</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" async></script>
   </head>
 
   <body>
@@ -30,8 +31,8 @@
           visuals, and making tech more friendly and accessible.
         </h3>
         <div class="button-row">
-          <button><a href="#about">Contact</a></button>
-          <button><a>Resume</a></button>
+          <button><p> Contact</p></button>
+          <button><p>Resume</p></button>
         </div>
       </div>
     </section>
@@ -50,7 +51,7 @@
           <h2>Perch</h2>
           <h4>PRODUCT DESIGN / USER RESEARCH / PROTOTYPING</h4>
           <p>An relaxed focus app with a social approach.</p>
-          <button><a href="perch.html">View Study</a></button>
+          <button onclick="location.href = 'perch.html';"><p>View Study</p></button>
         </div>
 
         <div class="project-image up">
@@ -68,7 +69,7 @@
             Redesigning the website for the University of Pittsburgh's 3D
             makerspace.
           </p>
-          <button><a href="openlab.html">View Study</a></button>
+          <button><p>View Study</p></button>
         </div>
         <div class="project-image up">
           <img src="test (1).svg" />
@@ -81,7 +82,7 @@
           <h4>CREATIVE TECHNOLOGY / HTML/CSS/JAVASCRIPT</h4>
           <p>Developing an interactive display for academic research.</p>
           <button>
-            <a href="metamodern.html" target="_blank"> View Study </a>
+            <p> View Study </p>
           </button>
         </div>
         <div class="project-image up">
@@ -115,7 +116,7 @@
           ></label>
 
           <!-- your other form fields go here -->
-          <button type="submit"><a>Send</a></button>
+          <button type="submit"><p>Send</p></button>
         </form>
       </div>
     </section>
@@ -124,66 +125,7 @@
    
     <footer>
       <p>Made with love &#169; 2024</p>
-      
     </footer>
 
-  
-    <script>
-      const options = {
-        root: null,
-        rootMargin: "0px",
-        threshold: 0.1,
-      };
-
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("is-visible");
-          } else {
-            entry.target.classList.remove("is-visible");
-          }
-        });
-      }, options);
-
-      //   COPY AND PASTE TO ADD MORE ANIMATIONS
-      const sections = document.querySelectorAll(".step");
-      const fade = document.querySelectorAll(".fade");
-      const up = document.querySelectorAll(".up");
-
-      sections.forEach((section) => {
-        observer.observe(section);
-      });
-
-      fade.forEach((img) => {
-        observer.observe(img);
-      });
-
-      up.forEach((img) => {
-        observer.observe(img);
-      });
-
-
-
-      const gridItems = document.querySelectorAll('.grid-item');
-let zoomedImg;
-
-gridItems.forEach((item) => {
-  item.addEventListener('click', () => {
-    const imgSrc = item.src;
-    if (!zoomedImg) {
-      zoomedImg = document.createElement('img');
-      zoomedImg.classList.add('zoomed');
-      document.body.appendChild(zoomedImg);
-      zoomedImg.addEventListener('click', closeZoomedImg);
-    }
-    zoomedImg.src = imgSrc;
-  });
-});
-
-function closeZoomedImg() {
-  zoomedImg.remove();
-  zoomedImg = null;
-}
-    </script>
   </body>
 </html>
