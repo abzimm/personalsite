@@ -6,6 +6,7 @@
     <title>Metamodern Media</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="study.css" />
+    <script src="script.js" async></script>
   </head>
   <body>
     <!-- nav -->
@@ -13,12 +14,13 @@
       <div class="navbar">
         <a href="#" class="logo"> AZ </a>
         <ul class="nav-links">
-          <li><a href="index.html#work">Work</a></li>
-          <li><a href="index.html#play">Play</a></li>
-          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html">Work</a></li>
+          <li><a href="art.html">Art</a></li>
+          <li><a href="about.html">About</a></li>
         </ul>
       </div>
     </nav>
+
 
     <!-- hero -->
     <section id="hero">
@@ -37,13 +39,11 @@
       </div>
       <!-- content-->
       <div class="container">
-        <button>
-          <a
-            href="https://abzimm.github.io/metamodern_media/index.html"
-            target="_blank"
+        <button onclick="location.href = 'https://abzimm.github.io/metamodern_media/index.html';">
+          <p
           >
             View Site
-          </a>
+        </p>
         </button>
         <h4>
           <br />
@@ -172,60 +172,17 @@
             <li> <p> Article written in <a  style="color:black" href="https://pittnews.com/article/186141/news/astonishing-projects-in-digital-composition-students-create-kiosks-for-showcase/"> The Pitt News  </a></p> </span> </li>
             <li> <p> Selected to be displayed during prospective students' tours </p> </li>
           </ul>
-        <img  class="m-img" src="metamodern/Screenshot_20240201_143048_Gallery.jpg" />
+          <div id="flow">
+        <img  class="m-img" src="metamodern/Screenshot_20240201_143048_Gallery.jpg" /></div>
         <p> Overall, I'm happy with how the project turned out in the amount of time I had. If I could work on it again, I would definitely <span class="highlight"> make it responsive + add more content </span>. There was material I cut due to the deadline, but designing for a kiosk was an interesting format that I want to return to. </p>
       </div>
 </section>
     <!-- footer -->
 
-    <!-- script -->
-    <script>
-      const options = {
-        root: null,
-        rootMargin: "0px",
-        threshold: 0.1,
-      };
+    <footer>
+      <p>Made with love &#169; 2024</p>
+      <a href="openlab.html"> &#8592; Open Lab </a>
+    </footer>
 
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("is-visible");
-          } else {
-            entry.target.classList.remove("is-visible");
-          }
-        });
-      }, options);
-
-      //   COPY AND PASTE TO ADD MORE ANIMATIONS
-      const sections = document.querySelectorAll(".step");
-      const move_left = document.querySelectorAll(".move-in-left");
-      const move_right = document.querySelectorAll(".move-in-right");
-      const fade = document.querySelectorAll(".fade");
-      const up = document.querySelectorAll(".up");
-
-      sections.forEach((section) => {
-        observer.observe(section);
-      });
-
-      move_left.forEach((p) => {
-        observer.observe(p);
-      });
-
-      move_right.forEach((p) => {
-        observer.observe(p);
-      });
-
-      fade.forEach((img) => {
-        observer.observe(img);
-      });
-
-      up.forEach((img) => {
-        observer.observe(img);
-      });
-
-
-      let vid = document.getElementsByClassName("mm_video");
-vid.playbackRate = 3.0;
-    </script>
   </body>
 </html>

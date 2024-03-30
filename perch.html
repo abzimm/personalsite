@@ -1,26 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Perch</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="study.css" />
-  </head>
-  <body>
-    <!-- nav -->
-    <nav role="navigation" aria-label="Main Navigation">
-      <div class="navbar">
-        <a href="#" class="logo"> AZ </a>
-        <ul class="nav-links">
-          <li><a href="index.html#work">Work</a></li>
-          <li><a href="#play">Play</a></li>
-          <li><a href="#about">About</a></li>
-        </ul>
-      </div>
-    </nav>
-
-    <!DOCTYPE html>
+ <!DOCTYPE html>
     <html lang="en">
       <head>
         <meta charset="UTF-8" />
@@ -28,6 +6,7 @@
         <title>Perch</title>
         <link rel="stylesheet" href="styles.css" />
         <link rel="stylesheet" href="study.css" />
+        <script src="script.js" async></script>
       </head>
       <body>
         <!-- nav -->
@@ -35,9 +14,9 @@
           <div class="navbar">
             <a href="#" class="logo"> AZ </a>
             <ul class="nav-links">
-              <li><a href="index.html#work">Work</a></li>
-              <li><a href="index.html#play">Play</a></li>
-              <li><a href="index.html#about">About</a></li>
+              <li><a href="index.html">Work</a></li>
+              <li><a href="art.html">Art</a></li>
+              <li><a href="about.html">About</a></li>
             </ul>
           </div>
         </nav>
@@ -59,13 +38,10 @@
           </div>
           <!-- content-->
           <div class="container">
-            <button>
-              <a
-                href="https://abzimm.github.io/metamodern_media/index.html"
-                target="_blank"
-              >
-                View Prototype
-              </a>
+            <button onclick="scrollToPrototype()">
+              <p>
+                Prototype
+              </p>
             </button>
 
 
@@ -233,7 +209,7 @@
                    <img src="perch\STYLING.svg">
                    </div>
 
-                   <h3> Interactive Prototype </h3>
+                   <h3 id="prototype"> Interactive Prototype </h3>
           </div>
 
 
@@ -268,51 +244,9 @@
         <!-- footer -->
         <footer>
           <p> Made with love 	&#169; 2024 </p>
-          <a> Open Lab -> </a>
-
+          <a href="openlab.html"> Open Lab &#8594;</a>
         </footer>
     
-        <!-- script -->
-        <script>
-          const options = {
-            root: null,
-            rootMargin: "0px",
-            threshold: 0.1,
-          };
-    
-          const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                entry.target.classList.add("is-visible");
-              } else {
-                entry.target.classList.remove("is-visible");
-              }
-            });
-          }, options);
-    
-          //   COPY AND PASTE TO ADD MORE ANIMATIONS
-          const sections = document.querySelectorAll(".step");
-
-          const fade = document.querySelectorAll(".fade");
-          const up = document.querySelectorAll(".up");
-    
-          sections.forEach((section) => {
-            observer.observe(section);
-          });
-
-          fade.forEach((img) => {
-            observer.observe(img);
-          });
-    
-          up.forEach((img) => {
-            observer.observe(img);
-          });
-
-          var vid = document.getElementsByClassName("video");
-vid.playbackRate = 10.0;
-      
-
-        </script>
       </body>
     </html>
     

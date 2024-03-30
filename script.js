@@ -51,3 +51,19 @@ function closeZoomedImg() {
   zoomedImg.remove();
   zoomedImg = null;
 }
+
+function openPDF() {
+  // Change the path to your local PDF file
+  var pdfPath = "Resume_Zimmerman.pdf";
+
+  // Open the PDF file in a new window or tab
+  window.open(pdfPath, "_blank");
+}
+
+function scrollToContact() {
+  document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+}
+
+function scrollToPrototype() {
+  document.getElementById("prototype").scrollIntoView({ behavior: "smooth" });
+}
