@@ -177,12 +177,14 @@ p {
 /* Buttons */
 button {
   outline: none;
+  outline-style: none;
   background-color: var(--color);
   border-radius: 20px;
   padding: 0.8em;
   min-width: 130px;
   max-width: 130px;
   transition: all 0.3s ease;
+  border: none;
 }
 
 button p {
