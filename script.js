@@ -54,7 +54,7 @@ function closeZoomedImg() {
 
 function openPDF() {
   // Change the path to your local PDF file
-  var pdfPath = "Resume_Zimmerman.pdf";
+  var pdfPath = "Resume_Zimmerman2024 (4).pdf";
 
   // Open the PDF file in a new window or tab
   window.open(pdfPath, "_blank");
