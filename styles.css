@@ -154,7 +154,7 @@ h3 {
 }
 
 h3 span {
-  -webkit-text-decoration: line-through orange 2px;
+  -webkit-text-decoration-line: line-through orange 2px;
   text-decoration: line-through orange 2px;
 }
 
