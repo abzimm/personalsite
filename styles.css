@@ -70,8 +70,10 @@ img {
 
 .nav-links a:hover,
 .nav-links a:focus {
-  -webkit-text-decoration: line-through orange 2px;
-  text-decoration: line-through orange 2px;
+  -webkit-text-decoration-line: line-through;
+  text-decoration-line: line-through;
+  -moz-text-decoration-line: line-through;
+  text-decoration-color: orange;
 }
 
 /* Structure */
